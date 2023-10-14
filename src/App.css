@@ -1,42 +1,29 @@
-#root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
-  text-align: center;
+/* App.css */
+
+/* Establece un fondo por defecto para toda la aplicación */
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #f0f0f0; /* Cambia esto al color que desees */
+  font-family: Arial, sans-serif; /* Cambia la fuente si lo deseas */
 }
 
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
+/* Agrega estilos globales para otros elementos si es necesario */
+/* Por ejemplo, estilos para enlaces */
+a {
+  text-decoration: none;
+  color: #007bff; /* Cambia el color de los enlaces si es necesario */
 }
 
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+/* Puedes agregar estilos globales para componentes específicos aquí */
+/* Por ejemplo, estilos para todos los botones */
+button {
+  cursor: pointer;
+  border: none;
+  padding: 8px 16px;
+  background-color: #007bff;
+  color: #fff;
+  border-radius: 4px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
-  }
-}
-
-.card {
-  padding: 2em;
-}
-
-.read-the-docs {
-  color: #888;
-}
+/* Define otros estilos globales según tus necesidades */
