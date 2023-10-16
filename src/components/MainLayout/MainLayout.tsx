@@ -1,19 +1,20 @@
-import { TextField } from "@mui/material"
+import { Box } from "@mui/material"
+import Footer from "../Footer/Footer"
 import Header from "../Header/Header"
-import CardMovie from "../CardMovie/CardMovie"
+import styles from "./styles.module.css"
 
-const MainLayout = () => {
+interface IProps {
+  children: JSX.Element,
+}
+
+const MainLayout:React.FC<IProps> = ({children}) => {
   return (
     <>
      <Header/>
-      <TextField
-        hiddenLabel
-        id="filled-hidden-label-small"
-        defaultValue="Small"
-        variant="filled"
-        size="small"
-      />
-      <CardMovie/>
+      <Box className={styles.boxMargin}>
+        {children}
+      </Box>
+      <Footer/>
     </>
   )
 }

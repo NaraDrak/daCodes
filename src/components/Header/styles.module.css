@@ -1,0 +1,10 @@
+.AppBar{
+    background: #5141EA !important;
+}
+
+.Toolbar{
+    display: flex; 
+    justify-content: space-between;
+    margin: 0px 100px
+
+}
