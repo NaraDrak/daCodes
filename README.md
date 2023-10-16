@@ -1,11 +1,13 @@
-# Installation:
+## Installation:
 
 npm install
 
-# To Start Server:
+## To Start Server:
 
 npm run dev
 
-# To Visit App:
+## To Visit App:
 
-http://127.0.0.1:5173/
+https://da-codes.vercel.app/movies
+
+
