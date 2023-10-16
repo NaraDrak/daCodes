@@ -17,9 +17,7 @@ interface Movie {
 }
 
 
-
-export const MovieGrid = () => {
-
+export const MovieGrid:React.FC = () => {
   const [movies, setMovies] = useState([]);
   const [isLoading, setIsLoading] = useState(false);
   const [totalMovies, setTotalMovies] = useState(0);

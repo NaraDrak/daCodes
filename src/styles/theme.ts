@@ -40,6 +40,11 @@ const theme = createTheme({
           backgroundColor: '#5141ea',
           color: '#fff',
           borderRadius: '50px',
+          '&:focus': {
+            outline: 'none',
+            backgroundColor: '#5141ea', // o cualquier otro color que prefieras
+            boxShadow: '0 0 0 2px rgba(58,227,195,0.3)', // Si quieres añadir un efecto glow al enfocar
+          },
         },
       },
     },

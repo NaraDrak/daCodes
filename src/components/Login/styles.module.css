@@ -71,3 +71,19 @@
     background-color: #3b28c7;
   }
   
+  .inputField {
+    width: 100%;
+    padding: 10px 15px;
+    margin: 10px 0;
+    border-radius: 50px;
+    border: 1px solid #ccc;
+    background: #5141ea;
+    color: #fff;
+    font-size: 16px;
+    transition: border-color 0.2s;
+  }
+  
+  .inputField:focus {
+    outline: none;
+    border-color: rgba(58,227,195,1); /* o cualquier color que prefieras para el enfoque */
+  }
