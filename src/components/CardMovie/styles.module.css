@@ -1,0 +1,30 @@
+.cardContainer {
+    height: 357px;
+    width: 253px;
+    background-size: cover;
+    border-radius: 50px;
+    position: relative;
+    overflow: hidden;
+    transition: 0.3s;
+}
+
+.movieDetails {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(81, 65, 234, 0.80);
+    padding: 16px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    opacity: 0;
+    transition: 0.3s;
+}
+
+.cardContainer:hover .movieDetails {
+    opacity: 1;
+}

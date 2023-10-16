@@ -1,13 +1,17 @@
 import AccountCircleOutlinedIcon from '@mui/icons-material/AccountCircleOutlined';
+import WebStoriesIcon from '@mui/icons-material/WebStories';
 import { AppBar, IconButton, Toolbar, Typography } from '@mui/material';
+import styles from './styles.module.css'
+interface Props {}
 
-const Header = () => {
+const Header:React.FC<Props> = () => {
   return (
-    <AppBar position="static" style={{ background: '#5141EA' }}>
-      <Toolbar style={{ display: 'flex', justifyContent: 'space-between' }}>
+    <AppBar position="static" className={styles.AppBar}>
+      <Toolbar className={styles.Toolbar}>
         
         <Typography variant="h6">
-          DaCodes.
+          <WebStoriesIcon/>
+           DaCodes.
         </Typography>
         
         <IconButton color="inherit">
