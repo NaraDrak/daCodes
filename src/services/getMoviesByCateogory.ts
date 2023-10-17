@@ -15,7 +15,7 @@ export const getMoviesMoviesByCategory = async (category:string, page: number = 
   try {
     const response = await api.get(`/movie/${category}`, {
       params: {
-        language: 'en-US', 
+        language: 'es-ES', 
         page: page
       }
     });

@@ -6,6 +6,7 @@ import { Vortex } from 'react-loader-spinner';
 import { getMoviesMoviesByCategory } from '../../services/getMoviesByCateogory';
 import CardMovie from "../CardMovie/CardMovie";
 import styles from './styles.module.css';
+import { translateValue } from '../../utils/translateCategories';
 
 interface Movie {
   id: number;
@@ -109,11 +110,9 @@ export const MovieGrid:React.FC = () => {
         >
           Upcoming
         </Button>
-
-
       </Box>
       <Box sx={{ marginBottom: "120px" }}>
-        <Typography color={"#ffff"} variant='h4'>{currentCategory}</Typography>
+        <Typography color={"#ffff"} variant='h4'>{translateValue(currentCategory)}</Typography>
         <Typography color={"#ffff"} variant='h6'>Texto introductorio</Typography>
       </Box>
       <Box className={styles.gridContainer}>
