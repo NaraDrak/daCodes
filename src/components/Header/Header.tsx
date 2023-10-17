@@ -27,7 +27,7 @@ const Header: React.FC<Props> = () => {
           <WebStoriesIcon />
           DaCodes.
         </Typography>
-        <IconButton  color="inherit" onClick={handleGuestLogout}>
+        <IconButton sx={{display: validSesion ? '' : 'none'}} color="inherit" onClick={handleGuestLogout}>
           <Typography variant='h6' marginRight={1}>
             {validSesion ? 'Cerra sesión' : ''} 
           </Typography>
